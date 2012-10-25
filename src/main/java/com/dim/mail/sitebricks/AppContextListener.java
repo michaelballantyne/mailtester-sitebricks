@@ -11,6 +11,7 @@ public class AppContextListener extends GuiceServletContextListener {
 	@Override
 	protected Injector getInjector() {
 		return Guice.createInjector(new SitebricksModule() {
+			@Override
 			protected void configureSitebricks() {
 	            scan(Home.class.getPackage());
 	        }

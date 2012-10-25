@@ -26,6 +26,21 @@
 			<scope>provided</scope>
 		</dependency>
 	</dependencies>
+        <dependencyManagement>
+            <dependencies>
+                <dependency>
+                    <groupId>com.ibm.icu</groupId>
+                    <artifactId>icu4j</artifactId>
+                    <version>49.1</version>
+                </dependency>
+                <dependency>
+                    <groupId>javax.servlet</groupId>
+                    <artifactId>servlet-api</artifactId>
+                    <version>2.5</version>
+                    <scope>provided</scope>
+                </dependency>
+            </dependencies>
+        </dependencyManagement>
 	<build>
 		<finalName>mail-sitebricks</finalName>
 	</build>
